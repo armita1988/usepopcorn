@@ -33,7 +33,7 @@ export default function MovieDetails({ defaultRating = 0, selectedMovieId, apiKe
             setError("");
             setIsLoading(true);
             try {
-                const resp = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${selectedMovieId}`,
+                const resp = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${selectedMovieId}`,
                     { signal: controller.signal });
                 if (!resp.ok) {
                     throw new Error("Something went wrong with movie fetcing");

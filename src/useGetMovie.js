@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export function useGetMovies({ baseUrl = "http://www.omdbapi.com/", apiKey = "87834919", query, setMovieList, setError, setIsLoading }) {
+export function useGetMovies({ baseUrl = "https://www.omdbapi.com/", apiKey = "87834919", query, setMovieList, setError, setIsLoading }) {
 
 
 
