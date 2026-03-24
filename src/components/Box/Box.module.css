@@ -1,0 +1,54 @@
+.btn {
+  border-radius: 100%;
+  /* padding: 0.8rem; */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  background-color: #000;
+  font-weight: 600;
+  border: none;
+}
+
+.box {
+  position: relative;
+  border-radius: 1rem;
+  background-color: var(--gray-color-02);
+  /* padding: 1.6rem 2.4rem; */
+  flex: 0 0 33.33%;
+  overflow: auto;
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .box {
+    flex-basis: 40%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .box {
+    flex-basis: 45%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/* 544/16=34 */
+/**************************/
+@media (max-width: 34em) {
+  .box {
+    flex-basis: 50%;
+  }
+}

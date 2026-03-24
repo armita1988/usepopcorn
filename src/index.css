@@ -44,53 +44,110 @@
   */
 
 :root {
-    --gray-color-01: #212529;
-    --gray-color-02: #2b3035;
-    --gray-color-03: #343a40;
-    --primary-color: #6741d9;
-    --tint-color-01: #7950f2;
-    --accent-color: #fcc419;
+  --gray-color-01: #212529;
+  --gray-color-02: #2b3035;
+  --gray-color-03: #343a40;
+  --primary-color: #6741d9;
+  --tint-color-01: #7950f2;
+  --accent-color: #fcc419;
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    background-color: var(--gray-color-01);
-    font-family: 'Roboto';
-    color: #fff;
-    line-height: 1;
-    font-size: 1.4rem;
-    font-weight: 400;
+  background-color: var(--gray-color-01);
+  font-family: "Roboto";
+  color: #fff;
+  line-height: 1;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .container {
-    height: 100dvh;
-    display: grid;
-    grid-template-rows: auto minmax(0, 1fr) auto;
-    row-gap: 3.2rem;
-    padding: 0 6.4rem;
-    padding-top: 3.2rem;
-
+  max-width: 144rem;
+  margin: 0 auto;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  row-gap: 3.2rem;
+  padding: 0 6.4rem;
+  padding-top: 3.2rem;
 }
 
 .btn-back {
-    border: none;
-    width: 3.6rem;
-    height: 3.6rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 999;
-    cursor: pointer;
+  border: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+  cursor: pointer;
+}
 
+/*
+***********************
+BELOW 1200px (Landscape Tablets)
+1200/16=75
+***********************
+*/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+  .container {
+    padding: 0 3.2rem;
+    padding-top: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 0 1.6rem;
+    padding-top: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  html {
+    /* 7px / 16px = 43.75% */
+    font-size: 43.75%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/* 544/16=34 */
+/**************************/
+@media (max-width: 34em) {
+  html {
+    /* 7px / 16px = 43.75% */
+    font-size: 43.75%;
+  }
+  .container {
+    padding: 0 1rem;
+    padding-top: 3.2rem;
+  }
 }

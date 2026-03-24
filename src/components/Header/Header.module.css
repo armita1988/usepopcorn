@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
+  background-color: hsl(254, 75%, 60%);
+  color: #fff;
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.9rem;
+  font-size: 1.8rem;
+  width: 90%;
+  margin: 0 auto;
+  justify-self: center;
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/* 544/16=34 */
+/**************************/
+@media (max-width: 34em) {
+  .header {
+    width: 100%;
+    gap: 1.6rem;
+    padding: 0.8rem 1.2rem;
+  }
+}

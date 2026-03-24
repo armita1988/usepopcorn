@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/* 544/16=34 */
+/**************************/
+@media (max-width: 34em) {
+  .main {
+    gap: 1.2rem;
+  }
+}

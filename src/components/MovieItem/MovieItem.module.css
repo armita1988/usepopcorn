@@ -1,0 +1,53 @@
+.movie {
+  display: flex;
+  gap: 2.4rem;
+  padding: 0.8rem 1.6rem;
+  align-items: center;
+  border-bottom: 1px solid #4f5456;
+  transition: background-color 0.3s;
+}
+
+.movie:last-child {
+  border-bottom: none;
+}
+
+.movie-img img {
+  width: 6rem;
+  max-width: 100%;
+  /* object-fit: contain; */
+}
+
+.movie-title {
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.movie:hover {
+  background-color: var(--gray-color-03);
+  cursor: pointer;
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .movie {
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/* 544/16=34 */
+/**************************/
+@media (max-width: 34em) {
+  .movie {
+    padding: 0.4rem 0.8rem;
+    gap: 1.2rem;
+  }
+  .movie-title {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+}
