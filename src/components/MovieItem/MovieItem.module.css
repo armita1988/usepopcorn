@@ -12,9 +12,9 @@
 }
 
 .movie-img img {
-  width: 6rem;
+  width: 4rem;
   max-width: 100%;
-  /* object-fit: contain; */
+  object-fit: contain;
 }
 
 .movie-title {
