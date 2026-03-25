@@ -1,70 +1,156 @@
-# Getting Started with Create React App
+# UsePopcorn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![API](https://img.shields.io/badge/API-Integration-green)
 
-## Available Scripts
+A **movie tracking web application** built with **React and JavaScript** that allows users to search movies, view details, rate watched films, and keep a persistent watched list.  
+This project demonstrates **component-based UI development, API integration, local state management, and persistent client-side storage**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[UsePopcorn](https://armita-usepopcorn.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- JavaScript (ES6+)
+- CSS
+- External Movie API
+- LocalStorage
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Search movies through an external API
+- Display movie details dynamically
+- Add watched movies to a personal list
+- Rate watched movies
+- Persist watched list data using LocalStorage
+- Responsive and interactive user interface
+- Component-based frontend structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Core User Flow
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Search and Watch Flow
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```text
+Search Movie
+   ↓
+Fetch Results from API
+   ↓
+Select Movie
+   ↓
+View Movie Details
+   ↓
+Rate Movie
+   ↓
+Add to Watched List
+   ↓
+Persist in LocalStorage
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Key Frontend Practices
 
-## Learn More
+- React component-based architecture
+- Dynamic rendering based on user interaction
+- API-driven data fetching
+- State updates based on selected movies and watched history
+- LocalStorage integration for persistent user data
+- Clear UI structure for browsing, selecting, and rating content
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+```text
+usepopcorn
+│
+├── public
+├── src
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Why This Project Matters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project demonstrates the ability to:
 
-### Making a Progressive Web App
+- Build an interactive frontend application with React
+- Integrate external APIs into a usable interface
+- Manage client-side state and persistent browser storage
+- Design a clean UI around real user actions and data flow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Clone the repository
 
-### Deployment
+```bash
+git clone https://github.com/armita1988/usepopcorn.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Enter the project folder
 
-### `npm run build` fails to minify
+```bash
+cd usepopcorn
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Run the Project
+
+Development mode
+
+```bash
+npm start
+```
+
+The app runs at
+
+```text
+http://localhost:3000
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## Future Improvements
+
+- Add loading and error states for API requests
+- Improve mobile responsiveness
+- Add sorting and filtering for watched movies
+- Add user preferences for ratings or watch history
+- Expand movie metadata and recommendation features
+
+---
+
+## Author
+
+**Armita Haji Mani**  
+Full-Stack Developer
+
+GitHub: https://github.com/armita1988

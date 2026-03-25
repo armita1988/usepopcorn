@@ -97,13 +97,6 @@ function App() {
               />
             </>
           )}
-
-          {/* 
-          {isLoading ? <Spinner /> :
-            (error ? <Error message={error} /> :
-              <MovieDetails KEY={KEY}
-                selectedMovieId={selectedMovie} setError={setError} setIsLoading={setIsLoading} />)
-          } */}
         </Box>
       </Main>
     </div>

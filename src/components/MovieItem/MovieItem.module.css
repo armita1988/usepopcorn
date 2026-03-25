@@ -50,4 +50,9 @@
     font-size: 1.4rem;
     line-height: 1.2;
   }
+  .movie-img img {
+    max-width: 3.2rem;
+    width: 100%;
+    object-fit: contain;
+  }
 }
