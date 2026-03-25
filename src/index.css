@@ -144,10 +144,10 @@ BELOW 1200px (Landscape Tablets)
 @media (max-width: 34em) {
   html {
     /* 7px / 16px = 43.75% */
-    font-size: 37.5%;
+    font-size: 43.75%;
   }
   .container {
-    padding: 0 1rem;
+    padding: 0 2rem;
     padding-top: 3.2rem;
   }
 }
